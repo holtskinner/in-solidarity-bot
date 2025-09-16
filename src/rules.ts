@@ -79,4 +79,79 @@ export const DEFAULT_RULES: { [key: string]: Rule } = {
     level: Level.OFF,
     alternatives: ["person-hours", "human-hours"],
   },
+  cakewalk: {
+    regex: [/cakewalk/gi],
+    level: Level.WARNING,
+    alternatives: ["easy", "simple", "trivial"],
+  },
+  crazy: {
+    regex: [/\b(crazy|insane)\b/gi],
+    level: Level.OFF,
+    alternatives: ["unpredictable", "illogical", "confusing", "wild"],
+  },
+  cripple: {
+    regex: [/\bcripple\b/gi],
+    level: Level.WARNING,
+    alternatives: ["disable", "slow down", "hinder"],
+  },
+  dummy: {
+    regex: [/dummy/gi],
+    level: Level.WARNING,
+    alternatives: ["placeholder", "sample", "mock", "stub"],
+  },
+  guys: {
+    regex: [/\bguys\b/gi],
+    level: Level.OFF,
+    alternatives: ["folks", "everyone", "people", "team", "y'all"],
+  },
+  housekeeping: {
+    regex: [/housekeeping/gi],
+    level: Level.OFF,
+    alternatives: ["maintenance", "cleanup", "admin"],
+  },
+  lame: {
+    regex: [/\blame\b/gi],
+    level: Level.OFF,
+    alternatives: ["uncool", "weak", "uninteresting", "subpar"],
+  },
+  redline: {
+    regex: [/red[_-]*line/gi],
+    level: Level.WARNING,
+    alternatives: ["block", "exclude"],
+  },
+  abort: {
+    regex: [/\b(abort|aborts|aborted|aborting)\b/gi],
+    level: Level.OFF,
+    alternatives: ["end", "stop", "cancel", "terminate"],
+  },
+  brownbag: {
+    regex: [/brown[_-]*bag/gi],
+    level: Level.WARNING,
+    alternatives: ["lunch and learn", "tech talk", "show and tell"],
+  },
+  first_class_citizen: {
+    regex: [/first[_-]*class[_-]*citizen/gi],
+    level: Level.OFF,
+    alternatives: ["first-class", "top-level", "core", "primary"],
+  },
+  kill: {
+    regex: [/\b(kill|kills|killed|killing)\b/gi],
+    level: Level.OFF,
+    alternatives: ["end", "stop", "terminate", "cancel", "halt"],
+  },
+  powwow: {
+    regex: [/\bpow[_-]*wow\b/gi],
+    level: Level.WARNING,
+    alternatives: ["meeting", "huddle", "sync-up", "gathering"],
+  },
+  native: {
+    regex: [/\bnative(ly)?\b/gi],
+    level: Level.OFF,
+    alternatives: ["built-in", "integrated", "core", "platform-specific"],
+  },
+  tribal_knowledge: {
+    regex: [/tribal[_-]*knowledge/gi],
+    level: Level.WARNING,
+    alternatives: ["institutional knowledge", "organizational knowledge"],
+  },
 };
